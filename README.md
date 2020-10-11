@@ -17,6 +17,13 @@ A provided makefile make everything easy! Simply run the following commands to d
  4. To run the pre-written tests, run `make test`
  5. Last but not least, to remove the binary, run `make clean`
  
+ ## How to use
+ After you run the application, you can use it by hit the endpoint `/analyzehtml` and give your URL as the request parameter.
+ 
+ Example : `localhost:8087/analyzehtml?url=https://www.amazon.com`
+ 
+ You have to use complete URL to use this application (`http://` or `https://` along with `www.`)
+ 
  ## How to contribute
  As they say, no project is perfect. This project also need many improvements. 
  Therefore, if you found anything you can improve, please don't hesitate to create an issue and make a pull request. 

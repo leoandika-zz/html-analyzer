@@ -25,6 +25,7 @@ func checkHTML(w http.ResponseWriter, r *http.Request) {
 	err := validateURL(url[0])
 	if err != nil {
 		respondWithError(w, http.StatusBadRequest, err.Error())
+		return
 	}
 
 	analyzeResult, err := htmlAnalyzerService.CheckHTMLFromURL(url[0])
@@ -73,7 +74,7 @@ func respondWithJSON(w http.ResponseWriter, code int, payload interface{}) {
 }
 
 func validateURL(url string) error{
-	if url[:12] != "https://www." || url[:11] != "http://www." {
+	if url[:12] != "https://www." && url[:11] != "http://www." {
 		return errors.New("invalid url. Please use https:// or http:// and www")
 	}
 	return nil
