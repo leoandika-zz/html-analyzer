@@ -9,7 +9,7 @@ A Backend-Only HTML Analyzer Project to analyze your web page, fully written usi
 - Number of Inaccessible Links (yep, you read that right!)
 - Whether your page contains login form or not
 
-##How to run
+## How to run
 A provided makefile make everything easy! Simply run the following commands to do things : 
  1. Clone the project and change current directory to the project folder
  2. To build the project, just run `make build`
@@ -17,7 +17,7 @@ A provided makefile make everything easy! Simply run the following commands to d
  4. To run the pre-written tests, run `make test`
  5. Last but not least, to remove the binary, run `make clean`
  
- ##How to contribute
+ ## How to contribute
  As they say, no project is perfect. This project also need many improvements. 
  Therefore, if you found anything you can improve, please don't hesitate to create an issue and make a pull request. 
  I will review it as soon as possible! :)
