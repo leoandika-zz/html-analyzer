@@ -1,11 +1,11 @@
 package main
 
 import (
-	"HTMLAnalyzer/model"
-	"HTMLAnalyzer/service"
 	"encoding/json"
 	"errors"
 	"fmt"
+	"html-analyzer/model"
+	"html-analyzer/service"
 	"log"
 	"net/http"
 

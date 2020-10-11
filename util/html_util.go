@@ -1,8 +1,8 @@
 package util
 
 import (
-	"HTMLAnalyzer/model"
 	"golang.org/x/net/html"
+	"html-analyzer/model"
 	"net/http"
 	"strings"
 	"time"

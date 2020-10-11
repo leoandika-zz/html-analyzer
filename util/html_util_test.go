@@ -1,8 +1,8 @@
 package util
 
 import (
-	"HTMLAnalyzer/model"
 	"github.com/stretchr/testify/assert"
+	"html-analyzer/model"
 	"reflect"
 	"testing"
 )

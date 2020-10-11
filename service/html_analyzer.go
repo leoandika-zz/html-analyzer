@@ -1,9 +1,9 @@
 package service
 
 import (
-	"HTMLAnalyzer/model"
-	"HTMLAnalyzer/util"
 	log "github.com/sirupsen/logrus"
+	"html-analyzer/model"
+	"html-analyzer/util"
 	"io/ioutil"
 	"net/http"
 	"strings"

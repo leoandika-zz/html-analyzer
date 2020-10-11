@@ -1,7 +1,7 @@
 package service
 
 import (
-	"HTMLAnalyzer/model"
+	"html-analyzer/model"
 	"net/http"
 	"net/http/httptest"
 	"reflect"
