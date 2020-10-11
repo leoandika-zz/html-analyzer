@@ -66,14 +66,15 @@ func respondWithError(w http.ResponseWriter, code int, message string) {
 }
 
 func respondWithJSON(w http.ResponseWriter, code int, payload interface{}) {
-	response, _ := json.Marshal(payload)
+	enc := json.NewEncoder(w)
+	enc.SetEscapeHTML(false)
 
 	w.Header().Set("Content-Type", "application/json")
 	w.WriteHeader(code)
-	w.Write(response)
+	enc.Encode(payload)
 }
 
-func validateURL(url string) error{
+func validateURL(url string) error {
 	if url[:12] != "https://www." && url[:11] != "http://www." {
 		return errors.New("invalid url. Please use https:// or http:// and www")
 	}

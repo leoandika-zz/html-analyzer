@@ -119,9 +119,8 @@ func CheckLoginForm(HTMLString string) (isExist bool) {
 		switch {
 		case tt == html.ErrorToken:
 			return
-		case tt == html.StartTagToken:
+		case tt == html.SelfClosingTagToken || tt == html.StartTagToken:
 			t := z.Token()
-
 			if t.Data == "input" {
 				for _, attr := range t.Attr {
 					if attr.Key == "type" {
